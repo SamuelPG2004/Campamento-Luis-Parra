@@ -1,0 +1,58 @@
+/* estilos.css */
+
+/* Estilos generales para la página */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Sección de descripción */
+  .descripcion {
+    background-image: url('images/descripcion.jpg'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Color de texto blanco para contrastar */
+    padding: 100px 20px; /* Espaciado alrededor de la sección */
+    min-height: 100vh; /* Hace que la sección ocupe toda la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Centra el texto */
+    background-attachment: fixed; /* Efecto de paralaje */
+  }
+  
+  /* Contenedor de la descripción */
+  .contenedor-descripcion {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejorar la legibilidad */
+    padding: 30px;
+    border-radius: 8px;
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho */
+  }
+  
+  /* Estilo del título */
+  .descripcion h2 {
+    font-size: 2.8em; /* Tamaño grande */
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #f5a623; /* Un color dorado que resalta */
+  }
+  
+  /* Estilo del texto */
+  .descripcion p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #f5f5f5;
+  }
+  
+  /* Estilo del texto en negrita */
+  .descripcion strong {
+    color: #f5a623; /* El mismo color que el título para dar énfasis */
+  }
+  

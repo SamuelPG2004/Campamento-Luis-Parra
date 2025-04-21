@@ -1,0 +1,172 @@
+/* --- Reset básico --- */
+/* --- Reset básico --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- Tipografía y Fondo --- */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* --- Header --- */
+header {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 20px 0;
+}
+
+.logo-container {
+    display: flex;
+    align-items: flex-start; /* Alinea el logo hacia arriba */
+    justify-content: center; /* Centra el logo y el título horizontalmente */
+    gap: 10px; /* Espacio entre el logo y el título */
+}
+
+.logo {
+    width: 50px; /* Ajusta el tamaño del logo */
+    height: auto;
+    margin-top: 10px; /* Sube el logo */
+}
+
+header h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 10px; /* Ajuste en el margen superior para alinear mejor el título */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #d4af37;
+}
+
+/* --- Hero Section --- */
+.hero {
+    background-image: url('images/IMG-20250420-WA0215.jpg'); /* Tu imagen aquí */
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 24px;
+}
+
+/* --- Habitaciones, Restaurante, Actividades y Reservas --- */
+section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.habitacion, .actividades ul {
+    margin-top: 20px;
+}
+
+.habitacion img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #d4af37;
+}
+
+/* --- Restaurante --- */
+#restaurante {
+    background-color: #ffffff;
+    padding: 50px 0;
+}
+
+#restaurante h2 {
+    font-size: 36px;
+    color: #2a2a2a;
+}
+
+#restaurante p {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+#restaurante ul {
+    list-style: none;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+#restaurante ul li {
+    font-size: 18px;
+    color: #333;
+    padding: 8px 0;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #2a2a2a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 16px;
+}

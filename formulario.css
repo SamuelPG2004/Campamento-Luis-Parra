@@ -1,0 +1,94 @@
+/* estilos.css */
+
+/* Estilo general de la sección */
+.reservas {
+    background-image: url('images/IMG-20250420-WA0218.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra toda la sección */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    padding: 50px; /* Espacio alrededor del formulario */
+    min-height: 100vh; /* Hace que la sección ocupe toda la altura de la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff; /* Cambié el color del texto a blanco para contrastar con el fondo */
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho */
+  }
+  
+  /* Estilo del título */
+  .reservas h2 {
+    text-align: center;
+    font-size: 2.5em; /* Aumenté el tamaño del texto */
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  /* Estilos del formulario */
+  form {
+    display: grid;
+    grid-gap: 20px; /* Aumenté el espacio entre los elementos */
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo semitransparente blanco para el formulario */
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%; /* Asegura que el formulario ocupe todo el ancho */
+    max-width: 900px; /* Limita el ancho máximo del formulario */
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho */
+    margin: 0 auto; /* Centra el formulario */
+  }
+  
+  /* Estilo de los labels */
+  form label {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.1em; /* Aumenté el tamaño del texto */
+  }
+  
+  /* Estilo de los inputs y textarea */
+  form input, form select, form textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1em; /* Aumenté el tamaño de la fuente */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 5px;
+  }
+  
+  /* Estilo del botón */
+  form button {
+    padding: 15px 30px;
+    background-color: #007bff; /* Color del botón */
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 50px; /* Bordes redondeados más pronunciados */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Transición suave para el hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    text-transform: uppercase; /* Hace el texto en mayúsculas */
+  }
+  
+  /* Efecto hover (cuando el mouse pasa por encima) */
+  form button:hover {
+    background-color: #0056b3; /* Color más oscuro cuando se pasa el ratón */
+    transform: translateY(-3px); /* Sube ligeramente el botón */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+  }
+  
+  /* Efecto focus (cuando el botón tiene el foco) */
+  form button:focus {
+    outline: none; /* Quitar el borde por defecto */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Borde azul brillante al hacer clic */
+  }
+  
+  /* Estilo del textarea */
+  form textarea {
+    height: 150px; /* Aumenté la altura del textarea */
+    resize: none;
+  }
+  
+  /* Estilo para los inputs de tipo date y number */
+  form input[type="date"], form input[type="number"] {
+    padding: 12px;
+  }
+  

@@ -1,0 +1,82 @@
+
+/* --- Fondo de la página --- */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('images/actividades.jpg'); /* Cambia esta ruta por la ruta correcta de tu imagen */
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    background-position: center center; /* Centra la imagen */
+    background-attachment: fixed; /* Hace que la imagen de fondo no se desplace con el scroll */
+    color: #333;
+  }
+  
+  /* --- Sección Actividades --- */
+  .actividades {
+    padding: 50px 0;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con algo de transparencia para que el fondo de imagen se vea */
+  }
+  
+  .actividades h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .actividades p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  
+  .actividades-imagenes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .actividad-item {
+    flex: 1 1 calc(33.33% - 30px);
+    margin-bottom: 20px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .actividad-item h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #2a2a2a;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .actividad-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .actividad-img:hover {
+    transform: scale(1.05);
+  }
+  
+  .actividad-item p {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .actividad-item {
+      flex: 1 1 100%;
+    }
+  }
+  

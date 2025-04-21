@@ -1,0 +1,90 @@
+/* --- Restaurante - Menú de imágenes --- */
+/* --- Reset básico --- */
+/* --- Reset básico --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* --- Tipografía y Fondo --- */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('images/restaurante.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center center; /* Centra la imagen */
+    background-attachment: fixed; /* Hace que la imagen no se mueva cuando se hace scroll */
+    color: #333;
+  }
+  
+  /* --- Header y Títulos --- */
+  h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  
+  /* --- Sección Restaurante --- */
+  #restaurante {
+    padding: 50px 0;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente para mejorar la legibilidad del texto */
+  }
+  
+  /* --- Contenedor principal --- */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* --- Menú de imágenes --- */
+  .menu-imagenes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .menu-item {
+    flex: 1 1 calc(33.33% - 30px);
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    text-align: center; /* Asegura que los títulos estén centrados */
+  }
+  
+  .menu-item h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #2a2a2a; /* Color de texto oscuro */
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo translúcido para mayor visibilidad */
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .menu-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .menu-img:hover {
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .menu-item {
+      flex: 1 1 100%;
+    }
+  }
+  

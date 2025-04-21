@@ -1,0 +1,42 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Reservas</title>
+  <link rel="stylesheet" href="formulario.css">
+  <link rel="icon" href="images/logo.jpg.jpg" type="image/x-icon">
+</head>
+<body>
+  <section id="reservas" class="reservas">
+    <h2>Formulario de Reservas</h2>
+    <form action="#" method="POST">
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" required>
+      <label for="fecha">Fecha de Reserva</label>
+      <input type="date" id="fecha" name="fecha" required>
+      <label for="personas">Número de Personas</label>
+      <input type="number" id="personas" name="personas" required>
+      <label for="habitacion">Tipo de Habitación</label>
+      <select id="habitacion" name="habitacion">
+        <option value="estandar">Estándar</option>
+        <option value="premium">Premium</option>
+        <option value="familiar">Familiar</option>
+        <option value="simple">Simple</option>
+        <option value="doble">Doble</option>
+        <option value="deluxe">Deluxe</option>
+        <option value="ejecutiva">Ejecutiva</option>
+        <option value="familiar-plus">Familiar Plus</option>
+      </select>
+      <label for="mensaje">Mensaje</label>
+      <textarea id="mensaje" name="mensaje"></textarea>
+      <button type="submit">Reservar</button>
+    </form>
+  </section>
+</body>
+</html>
