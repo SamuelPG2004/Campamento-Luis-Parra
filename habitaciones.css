@@ -78,3 +78,25 @@
 .habitacion button:hover {
     background-color: #8b653f;
 }
+
+@media (max-width: 768px) {
+    .habitaciones h2 {
+        font-size: 2.2em;
+    }
+
+    .habitacion {
+        padding: 20px;
+    }
+
+    .habitacion h3 {
+        font-size: 1.6em;
+    }
+
+    .precio {
+        font-size: 1.2em;
+    }
+
+    .habitacion ul li {
+        font-size: 0.9em;
+    }
+}
